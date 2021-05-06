@@ -1,0 +1,60 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "page/home/index",
+      "style": {
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "page/scan/index"
+    },
+    {
+      "path": "page/my/index",
+      "style": {
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "mp-alipay": {
+      "transparentTitle": "always",
+      "titlePenetrate": "YES"
+    },
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#13227a",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "page/home/index",
+        "text": "",
+        "iconPath": "static/icon/home.png",
+        "selectedIconPath": "static/icon/home-selected.png"
+      },
+      {
+        "pagePath": "page/scan/index",
+        "text": "",
+        "iconPath": "static/icon/scancode.png",
+        "selectedIconPath": "static/icon/scancode-selected.png"
+      },
+      {
+        "pagePath": "page/my/index",
+        "text": "",
+        "iconPath": "static/icon/my.png",
+        "selectedIconPath": "static/icon/my-selected.png"
+      }
+    ]
+  }
+}

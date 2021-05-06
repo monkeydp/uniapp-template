@@ -1,0 +1,32 @@
+button {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-success {
+  color: white;
+  background-color: #129611;
+  border-color: #129611;
+}
+
+// 默认字体, 行宽 32rpx, 行高 39rpx
+.info {
+  padding: 0 20rpx;
+  margin-top: 40rpx;
+  text-align: left;
+
+  .label {
+    opacity: 0.5;
+    margin-right: 20rpx;
+  }
+
+  .value {
+    vertical-align: top;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
