@@ -34,7 +34,7 @@
     export default class Booklist extends Vue {
 
         @Inject
-        private bookApi!: BookApi
+        private api!: BookApi
 
         private isLoading = true
 
@@ -56,7 +56,7 @@
         private async getPaging() {
             this.isLoading = true
             // @ts-ignore
-            const paging = await this.bookApi.paging(this.pqForm)
+            const paging = await this.api.paging(this.pqForm)
             this.isLoading = false
             return paging
         }
